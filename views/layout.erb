@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1>Todo Tracker</h1>
-      <%= yield_content :header_links %>
+      <%== yield_content :header_links %>
     </header>
     <% if session[:error] %>
       <div class="flash error">
@@ -23,7 +23,7 @@
       </div>
     <% end %>
     <main>
-      <%= yield %>
+      <%== yield %>
     </main>
   </body>
 </html>
